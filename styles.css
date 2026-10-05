@@ -128,7 +128,20 @@ nav .wrap {
 }
 
 /* Home */
-.home { padding: 72px 0 96px; }
+.home { position: relative; padding: 72px 0 96px; }
+.home > .wrap { position: relative; z-index: 1; }
+.home-sketch {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 96px;
+  width: min(68vw, 1040px);
+  height: auto;
+  opacity: 0.6;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 18%, #000 50%);
+          mask-image: linear-gradient(90deg, transparent 18%, #000 50%);
+}
 .home-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -199,8 +212,6 @@ nav .wrap {
 .pill.primary { background: var(--accent-strong); border-color: var(--accent-strong); color: #fff; }
 .pill.primary:hover { background: var(--accent); border-color: var(--accent); color: var(--black); }
 
-.hero-art { width: 100%; max-width: 460px; justify-self: end; }
-.hero-art img { display: block; width: 100%; height: auto; }
 
 .page-links {
   display: grid;
@@ -393,7 +404,6 @@ footer a:hover { color: var(--accent); }
 /* Tablet */
 @media (max-width: 900px) {
   .home-grid { grid-template-columns: 1fr; gap: 24px; }
-  .hero-art { max-width: 260px; justify-self: start; grid-row: 1; }
   .page-links { grid-template-columns: 1fr 1fr; }
   .page-link:last-child:nth-child(odd) { grid-column: span 2; }
   .page { grid-template-columns: 1fr; gap: 40px; }
@@ -407,7 +417,7 @@ footer a:hover { color: var(--accent); }
   nav .wrap { height: 56px; }
   .logo { font-size: 20px; }
   .home { padding: 40px 0 64px; }
-  .hero-art { display: none; }
+  .home-sketch { width: 120vw; right: -30vw; top: 90px; opacity: 0.28; }
   .tagline { font-size: 17px; }
   .page-links { grid-template-columns: 1fr; margin-top: 48px; }
   .page-link:last-child:nth-child(odd) { grid-column: auto; }
@@ -720,3 +730,4 @@ a.fav:hover { transform: translateY(-3px); border-color: var(--accent-strong); b
   .icon-tile { width: 42px; height: 42px; margin-top: 4px; }
   .sum-lead { gap: 12px; align-items: flex-start; }
 }
+.org-logo[src$="sewa.png"] { padding: 0; }
