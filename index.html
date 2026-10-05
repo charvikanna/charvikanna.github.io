@@ -10,18 +10,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
   <nav>
     <div class="wrap">
       <a href="index.html" class="logo"><span class="full">Charvi Kanna</span><span class="short">CK</span></a>
-      <ul class="nav-links">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span></button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="leadership.html">Leadership</a></li>
         <li><a href="honors.html">Honors</a></li>
+        <li><a href="interests.html">Interests</a></li>
       </ul>
     </div>
   </nav>
@@ -33,11 +35,15 @@
           <div>
             <h1 class="name reveal">Charvi<br><em>Kanna</em></h1>
             <p class="tagline reveal"><span>Computer Science @ <strong>Cornell University</strong></span></p>
+            <dl class="facts reveal">
+              <div><dt>Year</dt><dd>Freshman</dd></div>
+              <div><dt>Hometown</dt><dd>Montville, NJ</dd></div>
+            </dl>
             <ul class="interests reveal" aria-label="Academic interests">
               <li>Artificial Intelligence</li>
               <li>Human-Computer Interaction</li>
               <li>Machine Learning</li>
-              <li>Data Visualization</li>
+              <li>Dance</li>
             </ul>
             <div class="socials reveal">
               <a class="pill primary" href="mailto:crk87@cornell.edu">
@@ -76,6 +82,10 @@
             <img src="images/honors.svg" alt="" width="72" height="58">
             <div><span class="label">Honors <span aria-hidden="true">&rarr;</span></span><span class="sub">Awards &amp; recognition</span></div>
           </a>
+          <a class="page-link reveal" href="interests.html">
+            <img src="images/interests.svg" alt="" width="72" height="58">
+            <div><span class="label">Interests <span aria-hidden="true">&rarr;</span></span><span class="sub">Dance, sports, music &amp; favorites</span></div>
+          </a>
         </div>
       </div>
     </header>
@@ -88,6 +98,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=5"></script>
 </body>
 </html>

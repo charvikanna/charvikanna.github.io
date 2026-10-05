@@ -10,18 +10,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
   <nav>
     <div class="wrap">
       <a href="index.html" class="logo"><span class="full">Charvi Kanna</span><span class="short">CK</span></a>
-      <ul class="nav-links">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span></button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="leadership.html">Leadership</a></li>
         <li><a href="honors.html" aria-current="page">Honors</a></li>
+        <li><a href="interests.html">Interests</a></li>
       </ul>
     </div>
   </nav>
@@ -30,17 +32,49 @@
     <div class="wrap page">
       <aside class="page-side reveal">
         <h1>Honors</h1>
-        <p>Awards and recognition along the way.</p>
+        <p>Awards and recognition along the way. Filter by category below.</p>
         <img src="images/honors.svg" alt="" width="320" height="260">
       </aside>
       <div class="page-content">
-        <ul class="awards reveal">
-          <li><span class="what">State Champion<small>NJ FBLA Website Design</small></span><span class="year">2026</span></li>
-          <li><span class="what">Accepted Poster<small>IEEE MIT Undergraduate Research Technology Conference</small></span><span class="year">2025</span></li>
-          <li><span class="what">7th Place<small>FBLA National Leadership Conference, Parliamentary Procedure</small></span><span class="year">2025</span></li>
-          <li><span class="what">State Champion<small>NJ FBLA Financial Math</small></span><span class="year">2024</span></li>
-          <li><span class="what">Gold Presidential Volunteer Service Award</span><span class="year">2022 – 2024</span></li>
-        </ul>
+        <div class="stats">
+          <div class="stat reveal"><span class="stat-num" data-count="2" data-suffix="×">2×</span><span class="stat-label">state championships</span></div>
+          <div class="stat reveal"><span class="stat-num" data-count="7" data-suffix="th">7th</span><span class="stat-label">place at FBLA nationals</span></div>
+          <div class="stat reveal"><span class="stat-num" data-count="3" data-suffix="">3</span><span class="stat-label">years of volunteer service</span></div>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter honors"><button type="button" class="chip" data-filter="all" aria-pressed="true">All</button><button type="button" class="chip" data-filter="competition" aria-pressed="false">Competitions</button><button type="button" class="chip" data-filter="research" aria-pressed="false">Research</button><button type="button" class="chip" data-filter="service" aria-pressed="false">Service</button></div>
+        <div class="awards-grid reveal">
+          <article class="award gold" data-cat="competition">
+            <span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6"/></svg></span>
+            <span class="award-year">2026</span>
+            <h3>State Champion</h3>
+            <p>NJ FBLA Website Design</p>
+          </article>
+          <article class="award" data-cat="research">
+            <span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="12" rx="1.5"/><path d="M12 15v6M8 21l4-6 4 6M8 11l3-3 2 2 3-3"/></svg></span>
+            <span class="award-year">2025</span>
+            <h3>Accepted Poster</h3>
+            <p>IEEE MIT Undergraduate Research Technology Conference</p>
+          </article>
+          <article class="award" data-cat="competition">
+            <span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3l3 6M16 3l-3 6"/><circle cx="12" cy="15" r="6"/><path d="M12 12l1 2h2l-1.5 1.4.5 2.1-2-1.1-2 1.1.5-2.1L9 14h2z"/></svg></span>
+            <span class="award-year">2025</span>
+            <h3>7th Place, Nationals</h3>
+            <p>FBLA National Leadership Conference — Parliamentary Procedure</p>
+          </article>
+          <article class="award gold" data-cat="competition">
+            <span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6"/></svg></span>
+            <span class="award-year">2024</span>
+            <h3>State Champion</h3>
+            <p>NJ FBLA Financial Math</p>
+          </article>
+          <article class="award" data-cat="service">
+            <span class="award-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>
+            <span class="award-year">2022 – 2024</span>
+            <h3>Gold Award</h3>
+            <p>Presidential Volunteer Service Award</p>
+          </article>
+        </div>
       </div>
     </div>
   </main>
@@ -52,6 +86,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=5"></script>
 </body>
 </html>
