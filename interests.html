@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 
@@ -32,26 +32,70 @@
     <div class="wrap page">
       <aside class="page-side reveal">
         <h1>Interests</h1>
-        <p>What I'm up to in my free time.</p>
+        <p>What I'm up to in my free time. Hover over a card (or tap) to flip it.</p>
         <img src="images/interests.svg" alt="" width="320" height="260">
       </aside>
       <div class="page-content">
         <div class="interests-grid">
-          <article class="interest reveal">
-            <div class="interest-img" role="img" aria-label="Bharatanatyam" style="background-image: url('images/interests/bharatanatyam.jpg'), url('images/interests/bharatanatyam.svg'); background-position: center 75%, center;"></div>
-            <div class="interest-text"><h3>Bharatanatyam</h3><p>Classical Indian dance</p></div>
+          <article class="interest reveal" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="interest-img" role="img" aria-label="Bharatanatyam" style="background-image: url('images/interests/bharatanatyam.jpg'), url('images/interests/bharatanatyam.svg'); background-position: center 75%, center;"></div>
+                <div class="interest-text"><h3>Bharatanatyam</h3><p>Classical Indian dance</p></div>
+                <span class="flip-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.6M20 4v4.6h-4.6M20 12a8 8 0 0 1-13.7 5.7L4 15.4M4 20v-4.6h4.6"/></svg></span>
+              </div>
+              <div class="flip-back">
+                <img src="images/interests/bharatanatyam.svg" alt="" class="back-art">
+                <span class="back-kicker">Dancing for</span>
+                <span class="back-big">12 years</span>
+                <p>of classical Indian dance</p>
+              </div>
+            </div>
           </article>
-          <article class="interest reveal">
-            <div class="interest-img" role="img" aria-label="Pickleball &amp; Tennis" style="background-image: url('images/interests/pickleball-tennis.jpg'), url('images/interests/pickleball-tennis.svg'); background-position: center 90%, center;"></div>
-            <div class="interest-text"><h3>Pickleball &amp; Tennis</h3><p>On the court</p></div>
+          <article class="interest reveal" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="interest-img" role="img" aria-label="Pickleball &amp; Tennis" style="background-image: url('images/interests/pickleball-tennis.jpg'), url('images/interests/pickleball-tennis.svg'); background-position: center 90%, center;"></div>
+                <div class="interest-text"><h3>Pickleball &amp; Tennis</h3><p>On the court</p></div>
+                <span class="flip-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.6M20 4v4.6h-4.6M20 12a8 8 0 0 1-13.7 5.7L4 15.4M4 20v-4.6h4.6"/></svg></span>
+              </div>
+              <div class="flip-back">
+                <img src="images/interests/pickleball-tennis.svg" alt="" class="back-art">
+                <span class="back-kicker">Pickleball &amp; Tennis</span>
+                <span class="back-big">Game on</span>
+                <p>Always up for a match</p>
+              </div>
+            </div>
           </article>
-          <article class="interest reveal">
-            <div class="interest-img" role="img" aria-label="Concerts" style="background-image: url('images/interests/concerts.jpg'), url('images/interests/concerts.svg'); background-position: center 60%, center;"></div>
-            <div class="interest-text"><h3>Concerts</h3><p>Live music &amp; big crowds</p></div>
+          <article class="interest reveal" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="interest-img" role="img" aria-label="Concerts" style="background-image: url('images/interests/concerts.jpg'), url('images/interests/concerts.svg'); background-position: center 60%, center;"></div>
+                <div class="interest-text"><h3>Concerts</h3><p>Live music &amp; big crowds</p></div>
+                <span class="flip-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.6M20 4v4.6h-4.6M20 12a8 8 0 0 1-13.7 5.7L4 15.4M4 20v-4.6h4.6"/></svg></span>
+              </div>
+              <div class="flip-back">
+                <img src="images/interests/concerts.svg" alt="" class="back-art">
+                <span class="back-kicker">Best concert</span>
+                <span class="back-big">The Weeknd</span>
+                <p>Fireworks, flames &amp; a full stadium</p>
+              </div>
+            </div>
           </article>
-          <article class="interest reveal">
-            <div class="interest-img" role="img" aria-label="Hiking" style="background-image: url('images/interests/hiking.jpg'), url('images/interests/hiking.svg'); background-position: center 72%, center;"></div>
-            <div class="interest-text"><h3>Hiking</h3><p>Trails &amp; the outdoors</p></div>
+          <article class="interest reveal" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="interest-img" role="img" aria-label="Hiking" style="background-image: url('images/interests/hiking.jpg'), url('images/interests/hiking.svg'); background-position: center 72%, center;"></div>
+                <div class="interest-text"><h3>Hiking</h3><p>Trails &amp; the outdoors</p></div>
+                <span class="flip-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.6M20 4v4.6h-4.6M20 12a8 8 0 0 1-13.7 5.7L4 15.4M4 20v-4.6h4.6"/></svg></span>
+              </div>
+              <div class="flip-back">
+                <img src="images/interests/hiking.svg" alt="" class="back-art">
+                <span class="back-kicker">Favorite trail</span>
+                <span class="back-big">Pyramid Mountain</span>
+                <p>Boonton, NJ</p>
+              </div>
+            </div>
           </article>
         </div>
 
@@ -87,6 +131,6 @@
     </div>
   </footer>
 
-  <script src="main.js?v=7"></script>
+  <script src="main.js?v=10"></script>
 </body>
 </html>
